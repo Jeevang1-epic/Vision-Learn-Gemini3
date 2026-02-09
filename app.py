@@ -1,7 +1,7 @@
 import streamlit as st
-import google.generativeai as genai
+import google.generativeai as genai #make sure it is pip installed through terminal 
 from PIL import Image, ImageGrab
-from gtts import gTTS
+from gtts import gTTS 
 import os
 import time
 
@@ -101,3 +101,4 @@ with tab2:
                         except:
 
                             pass
+
