@@ -6,7 +6,7 @@ import os
 import time
 
 # I am pasting my API Key here so the app can talk to Google servers
-API_KEY = "api_key_goes_here" 
+API_KEY = "api_key_goes_here" #api is important
 
 # I am configuring the model to use the Gemini 3 Flash version
 genai.configure(api_key=API_KEY)
@@ -99,4 +99,5 @@ with tab2:
                             tts.save("response_screen.mp3")
                             st.audio("response_screen.mp3")
                         except:
+
                             pass
