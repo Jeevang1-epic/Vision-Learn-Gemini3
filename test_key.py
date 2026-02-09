@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Setup
-API_KEY = "api_key_goes_here"
+API_KEY = "api_key_goes_here" #important, and it shouldnt be shared 
 genai.configure(api_key=API_KEY)
 
 # List available models to find the right name for Gemini 3
@@ -17,4 +17,5 @@ try:
     print("\nSUCCESS! Response from AI:")
     print(response.text)
 except Exception as e:
+
     print("\nError:", e)
